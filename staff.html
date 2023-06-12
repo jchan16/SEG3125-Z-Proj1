@@ -1,0 +1,344 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap JavaScript + Popper -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Bike Stop/services</title>
+
+    <style>
+        nav {
+              background-image:linear-gradient(to top,rgba(255,0,0,0),rgba(116, 171, 242, 1));
+              color:rgba(126, 145, 157,1);
+        }
+  
+        body {
+              background-image: linear-gradient(to bottom, rgba(255,0,0,0),rgba(47, 64, 84,1));
+              background-attachment: fixed;
+          }
+  
+        .content{
+              background-color:rgba(126, 145, 157, 0.25)
+              
+        }
+  
+        .title{
+          background-color:rgba(196, 207, 219, 0.897)
+        }
+  
+      </style>
+    
+</head>
+    <body>
+        <!-- Navbar --> 
+        <!-- add collaspe once other pages are done-->
+        <nav class="navbar navbar-expand-sm navbar-light ">
+            <a class="navbar-brand me-auto" href="homepage.html">
+                <img src="Images\logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                Bike Stop
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Location/Hours </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link active" aria-current="page" href="#">Staff</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="booking.html">Book Service</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Page content -->
+        <!-- add functionality to the buttons / replace borders with something color -->
+        <!-- Title Row-->
+        <div class="container mt-5 justify-content-center">
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <h4 class="text-center">Meet some of the staff at Bike Stop!</h4>
+                </div>
+            </div>
+        
+        <!-- Card Column-->
+            <div class="row justify-content-center">
+                <div class="col-6 d-flex flex-column align-items-center justify-content-space-evenly">
+                    <div class="card h-100 my-4" style="width: 18rem;">
+                        <img src="Images\Mike.jpg" class="card-img-top" alt="...">
+                        <div class="card-body title">
+                          <h5 class="card-title text-center">Mike Brown</h5>
+                          <p class="card-text"> Co-Owner of Bike Stop. Older brother of Mitchel Brown</p>
+                          <button type="button "class="btn btn-primary d-block mx-auto" data-bs-toggle="modal" data-bs-target="#MikeModal">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                        <div class="modal fade" id="MikeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header" style="background-image:linear-gradient(to top,rgba(255,0,0,0),rgba(116, 171, 242, 1));">
+                                <h5 class="modal-title"  id="exampleModalLabel">About Mike</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class=" row d-flex  flex-row justify-content-center ">
+                                        <div class="col d-flex  flex-column align-items-center justify-content-center">
+                                            <h4 class="text-center">Mike Brown</h4>
+                                            <img src="Images\Mike.jpg" class="d-block img-fluid mb-5" alt="...">
+                                        </div>
+
+                                        <div class="col d-flex justify-content-center align-items-center">
+                                            <ul class="list-group list-group-flush d-flex">
+                                                <li class="list-group-item text-center"><strong>Serivces this staff provides</strong></li>
+                                                <li class="list-group-item text-center">Repair Appointment</li>
+                                                <li class="list-group-item text-center">Shopping Appointment</li>
+                                                <li class="list-group-item">
+                                                    <form id="Booking" action="booking.html" method="get">
+                                                        <input type="hidden" id="staff2" name="staff2" value="Mike Brown">
+                                                        <button type="submit" class="btn btn-primary">Book a Service with this Staff</button>
+                                                    </form>
+                                                </li>
+                                              </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class = "row justify-content-center d-flex">
+                                        <div class="col d-flex">
+                                            <div class="d-block m-4">
+                                                <h3> <strong>Description:</strong></h3>
+                                                <br>
+                                                <p class="text-wrap"> Mike started to ride bikes when he was 3 years old. As he grew up he would often 
+                                                watch his mother fix her bike and at the age of 12 started to work on his own bike in the garage. Mike
+                                                woud eventually pursue a degree in civil engineering at Western University. After some time he would quit his
+                                                civil engineering job for the government and start Bike Stop. Besides his passion for bikes, Mike dabbles playing video games, photography and thrifting.
+                                                Mike can be quite stubborn but he means well and is more than happy to help anybody, no matter their issue.
+
+                                                </p>
+                                                <br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer d-flex justify-content-center" style="background-image: linear-gradient(to bottom, rgba(255,0,0,0),rgba(47, 64, 84,1));">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                    <div class="card h-100 my-4" style="width: 18rem;">
+                        <img src="Images\Mirana.jpg" class="card-img-top" alt="...">
+                        <div class="card-body title">
+                          <h5 class="card-title text-center">Mirana Rao</h5>
+                          <p class="card-text">Shop Assistant at Bike Stop. Loves particpating in bike races</p>
+                          <button type="button "class="btn btn-primary d-block mx-auto" data-bs-toggle="modal" data-bs-target="#MiranaModal">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="MiranaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-image:linear-gradient(to top,rgba(255,0,0,0),rgba(116, 171, 242, 1));">
+                            <h5 class="modal-title" id="exampleModalLabel">About Mirana</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class=" row d-flex  flex-row justify-content-center ">
+                                    <div class="col flex-column align-items-center justify-content-center">
+                                        <h4 class="text-center">Mirana Rao</h4>
+                                        <img src="Images\Mirana.jpg" class="d-block img-fluid mb-5" alt="...">
+                                    </div>
+
+                                    <div class="col d-flex justify-content-center align-items-center">
+                                        <ul class="list-group list-group-flush d-flex">
+                                            <li class="list-group-item text-center"><strong>Serivces this staff provides</strong></li>
+                                            <li class="list-group-item text-center">Repair Appointment</li>
+                                            <li class="list-group-item text-center">Shopping Appointment</li>
+                                            <li class="list-group-item">
+                                                <form id="Booking" action="booking.html" method="get">
+                                                    <input type="hidden" id="staff2" name="staff2" value="Mirana Rao">
+                                                    <button type="submit" class="btn btn-primary">Book a Service with this Staff</button>
+                                                </form>
+                                            </li>
+                                          </ul>
+                                    </div>
+                                </div>
+
+                                <div class = "row justify-content-center d-flex">
+                                    <div class="col d-flex ">
+                                        <div class="d-block m-4">
+                                            <h3> <strong>Description:</strong></h3>
+                                            <br>
+                                            <p class="text-wrap"> Mirana immigrated to Canada from Tripura at a young age. She rode a bike to school everyday 
+                                                during her adolescent years. She would eventually go to Algonquin college to get a degree is business management.
+                                                She was introduced to Bike Stop when she and her wife came in to use the work benches to tune up their bikes after 
+                                                a charity race. After some more bookings, she eventually decided to join Bike Stop. You'll find her 
+                                                mainly at the front desk. She can be a little quiet but she warms up to people fast.
+
+                                            </p>
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center" style="background-image: linear-gradient(to bottom, rgba(255,0,0,0),rgba(47, 64, 84,1));">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 d-flex flex-column align-items-center justify-content-space-evenly">
+                    <div class="card h-100 my-4" style="width: 18rem;">
+                        <img src="Images\Mitchel.jpg" class="card-img-top" alt="...">
+                        <div class="card-body title">
+                          <h5 class="card-title text-center">Mitchel Brown</h5>
+                          <p class="card-text">Co-owner of Bike Stop. Younger Brother to Mike Brown</p>
+                          <button type="button "class="btn btn-primary d-block mx-auto" data-bs-toggle="modal" data-bs-target="#MitchelModal">Learn More</button>
+                        </div>
+                    </div>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="MitchelModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-image:linear-gradient(to top,rgba(255,0,0,0),rgba(116, 171, 242, 1));">
+                            <h5 class="modal-title" id="exampleModalLabel">About Mitchel</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class=" row d-flex  flex-row justify-content-center ">
+                                    <div class="col d-flex flex-column align-items-center justify-content-center">
+                                        <h4 class="text-center">Mitchel Brown</h4>
+                                        <img src="Images\Mitchel.jpg" class="d-block img-fluid mb-5" alt="...">
+                                    </div>
+
+                                    <div class="col d-flex  justify-content-center align-items-center">
+                                        <ul class="list-group list-group-flush d-flex">
+                                            <li class="list-group-item text-center"><strong>Serivces this staff provides</strong></li>
+                                            <li class="list-group-item text-center">Repair Appointment</li>
+                                            <li class="list-group-item text-center">Shopping Appointment</li>
+                                            <li class="list-group-item">
+                                                <form id="Booking" action="booking.html" method="get">
+                                                    <input type="hidden" id="staff2" name="staff2" value="Mitchel Brown">
+                                                    <button type="submit" class="btn btn-primary">Book a Service with this Staff</button>
+                                                </form>
+                                            </li>
+                                          </ul>
+                                    </div>
+                                </div>
+
+                                <div class = "row justify-content-center d-flex">
+                                    <div class="col d-flex ">
+                                        <div class="d-block m-4">
+                                            <h3> <strong>Description:</strong></h3>
+                                            <br>
+                                            <p class="text-wrap"> 
+                                                Mitchel orginally was not as fond very fond with bikes. Even to this day he prefers roller balding to biking.
+                                                Growing up, Mitchel often accompanied on roller blade when Mike was biking. After highschool, Mitchel started 
+                                                an apprenticeship to become a car mechanic. Mitchel decided to help 
+                                                his brother Mike runs his new Bike Shop after work, eventually he quit being a car mechanic to help full time. You'll find Mitchel mainly at a work bench repairing a bike. He's a bit chatty but 
+                                                he's more than willing to strike up a converstion with anybody.
+                                            </p>
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center" style="background-image: linear-gradient(to bottom, rgba(255,0,0,0),rgba(47, 64, 84,1));">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="card h-100 my-4" style="width: 18rem;">
+                        <img src="Images\Maurice.jpg" class="card-img-top" alt="...">
+                        <div class="card-body title">
+                          <h5 class="card-title text-center">Maurice Adisa</h5>
+                          <p class="card-text">Mechanic at Bike Stop. Avid mountain biker</p>
+                          <button type="button "class="btn btn-primary d-block mx-auto" data-bs-toggle="modal" data-bs-target="#MauriceModal">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="MauriceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-image:linear-gradient(to top,rgba(255,0,0,0),rgba(116, 171, 242, 1));">
+                            <h5 class="modal-title" id="exampleModalLabel">About Maurice</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class=" row d-flex  flex-row justify-content-center ">
+                                    <div class="col d-flex flex-column align-items-center justify-content-center">
+                                        <h4 class="text-center">Mitchel Brown</h4>
+                                        <img src="Images\Maurice.jpg" class="d-block img-fluid mb-5" alt="...">
+                                    </div>
+
+                                    <div class="col d-flex justify-content-center align-items-center">
+                                        <ul class="list-group list-group-flush d-flex">
+                                            <li class="list-group-item text-center"><strong>Serivces this staff provides</strong></li>
+                                            <li class="list-group-item text-center">Repair Appointment</li>
+                                            <li class="list-group-item text-center">Shopping Appointment</li>
+                                            <li class="list-group-item">
+                                                <form id="Booking" action="booking.html" method="get">
+                                                    <input type="hidden" id="staff2" name="staff2" value="Maurice Adisa">
+                                                    <button type="submit" class="btn btn-primary">Book a Service with this Staff</button>
+                                                </form>
+                                            </li>
+                                          </ul>
+                                    </div>
+                                </div>
+
+                                <div class = "row justify-content-center d-flex">
+                                    <div class="col d-flex ">
+                                        <div class="d-block m-4">
+                                            <h3> <strong>Description:</strong></h3>
+                                            <br>
+                                            <p class="text-wrap"> 
+                                                Maurice has known how to ride a unicycle since he was ten. Often after school, we would go to the 
+                                                track field and try to ride laps on his unicycle. Maurice campe across Bik Stop when he was trying to 
+                                                fix up his unicycle after it had taken a hard fall. Maurice has a degree in electrical engineering but couldnt find a job
+                                                after graduating so he applied to Bike Stop. He'ss been with the shop for 6 years and you'll find him at a repair bench most of the time.
+                                                If you ever want to learn how to ride a unicycle, feel free to ask Maurice.
+                                            </p>
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center" style="background-image: linear-gradient(to bottom, rgba(255,0,0,0),rgba(47, 64, 84,1));">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+        
+    </body>
+</html>

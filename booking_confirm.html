@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap JavaScript + Popper -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Bike Stop/services</title>
+
+    <script>
+        var name_value;
+        var email_value;
+        var service_value;
+        var staff_value;
+        var date_value;
+        var time_value;
+        var url_data = new URLSearchParams(window.location.search);
+
+        window.addEventListener("load",initialize,false);
+
+        function initialize(){
+            name_value = document.getElementById("name");
+            email_value = document.getElementById("email");
+            service_value = document.getElementById("service");
+            staff_value = document.getElementById("staff");
+            date_value= document.getElementById("date");
+            time_value= document.getElementById("time");
+            document.getElementById("Redo_button").addEventListener("click",redo,false);
+            populate()
+        }
+
+        function redo(){
+            document.getElementById("fname2").value = url_data.get("fname");
+            document.getElementById("email2").value = url_data.get("email");
+            document.getElementById("service2").value = url_data.get("service");
+            document.getElementById("date2").value = url_data.get("date");
+            document.getElementById("staff2").value = url_data.get("staff");
+            document.getElementById("start_time2").value = url_data.get("start_time");
+            document.getElementById("end_time2").value = url_data.get("end_time");
+        }
+
+        function populate(){
+            name_value.innerHTML=url_data.get("fname");
+            email_value.innerHTML=url_data.get("email");
+            service_value.innerHTML=url_data.get("service");
+            staff_value.innerHTML=url_data.get("staff");
+            date_value.innerHTML=url_data.get("date");
+            time_value.innerHTML= url_data.get("start_time")+" - "+url_data.get("end_time");
+        }
+    </script>
+
+    <style>
+        nav {
+            background-image:linear-gradient(to top,rgba(255,0,0,0),rgba(116, 171, 242, 1));
+            color:rgba(126, 145, 157,1);
+        }
+
+        body {
+            background-image: linear-gradient(to bottom, rgba(255,0,0,0),rgba(47, 64, 84,1));
+            background-attachment: fixed;
+        }
+
+        .content{
+            background-color:rgba(126, 145, 157, 0.25)
+            
+        }
+
+        .title{
+        background-color:rgba(196, 207, 219, 0.897)
+    }
+
+    </style>
+</head>
+    <body>
+        <!-- Navbar --> 
+        <!-- add collaspe once other pages are done-->
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <a class="navbar-brand me-auto" href="homepage.html">
+                <img src="Images\logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                Bike Stop
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Location/Hours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="staff.html">Staff</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="booking.html">Book Service</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Page content -->
+        <!-- add functionality to the buttons / replace borders with something color -->
+        <div class="container w-75 h-75 d-flex justify-content-center d-flex flex-column">
+            <div class="row">
+                <div class="col mt-5">
+                    <h4 class="text-center">Your Booking has been confirmed!</h4>
+                    <p class="text-center"> Here are the details of your booking:</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" container">
+                        <div class="row mt-5  d-flex flex-row justify-content-space-evenly">
+                            <div class="col">
+                                <p><strong> Full name: </strong> <span id=name></span></p>
+                            </div>
+                            
+                            <div class="col" >
+                                <p> <strong>Email:</strong> <span id=email></span></p>
+                            </div>
+                        </div>
+
+                        <div class="row mt-5 d-flex flex-row justify-content-space-evenly">
+                            <div class="col ">
+                                <p> <strong>Service: </strong><span id=service></span></p>
+                            </div>
+                            
+                            <div class="col" >
+                                <p><strong>Staff: </strong><span id=staff></span></p>
+                            </div>
+                        </div>
+
+
+                        <div class="row mt-5  d-flex flex-row justify-content-space-evenly">
+                            <div class="col ">
+                                <p> <strong>Date: </strong><span id=date></span></p>
+                            </div>
+                            
+                            <div class="col" >
+                                <p><strong>Time: </strong><span id=time></span></p>
+                            </div>
+                        </div>
+                        
+                        <div class="row mt-5  d-flex justify-content-center">
+                            <div class="col">
+                                <form action="booking.html" method="get">
+                                    <input type="hidden" id="fname2" name="fname2" >
+                                    <input type="hidden" id="email2" name="email2" >
+                                    <input type="hidden" id="service2" name="service2" >
+                                    <input type="hidden" id="staff2" name="staff2" >
+                                    <input type="hidden" id="date2" name="date2" >
+                                    <input type="hidden" id="start_time2" name="start_time2" >
+                                    <input type="hidden" id="end_time2" name="end_time2" >
+                                    <button type="submit" class=" d-block mx-auto btn btn-primary" id="Redo_button">Undo Booking</button>
+                                </form>
+                            </div>
+                        </div>
+            </div>
+            
+        </div>
+    </body>
+</html>

@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap JavaScript + Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <title>Bike Stop/home</title>
+
+    <style>
+        nav{
+            background-image:linear-gradient(to top,rgba(255,0,0,0),rgba(116, 171, 242, 1));
+            color:rgba(126, 145, 157,1);
+        }
+
+        body {
+            background-image: linear-gradient(to bottom, rgba(255,0,0,0),rgba(47, 64, 84,1));
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+    <body>
+        <!-- Navbar --> 
+        <nav class="navbar navbar-expand-sm navbar-light" >
+            <a class="navbar-brand me-auto" href="homepage.html">
+                <img src="Images\logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                Bike Stop
+            </a>
+             <!-- collapse button if pview gets smaller -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Location/Hours </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="staff.html">Staff</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="booking.html">Book Service</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <!--Page content -->
+
+        <!-- Title -->
+        <h3 class="display-3 text-center mt-5">Welcome to Bike Stop!</h3>
+        <p class="text-center text-muted"> <small><em>Your one stop shop for most bike services</em></small></p>
+        <br><br>
+
+        <!-- Description-->
+        <div class="container">
+            <div class="mx-auto w-50">
+                <!-- add hrefs once other pages are done -->
+                <p> Bike Stop is a bike store in downtown Ottawa that welcomes everyone from bike finatics to 
+                    people who have no clue about bikes. Bike stop offers a variety of <a href="services.html"> services </a> that will
+                    cater to any bike owner and their type of bike.
+                    <a href="staff.html"> Bike stop staff </a> started with its 2 founder Mike and Mitchel Brown
+                    and have now expanded to 16 employees. Location and contact information can be found <a href="about.html"> here </a>.
+                    We hope to see you in our shop soon!
+                </p>
+            </div>
+        </div>
+
+    <!-- Images slideshow-->
+    <div class="container d-flex justify-content-center mt-5 w-50 h-50">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Images\stock_outside.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Images\stock_interior.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Images\stock_interior2.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+
+    </body>
+</html>
